@@ -21,3 +21,10 @@ describe('validations tests suites - isValid', () => {
         expect(result).toBeFalsy();
     });
 });
+
+describe('validations tests suites - isValid', () => {
+    test('should return true with a good gamertag', () => {
+        const result = isValid('gamertag$1');
+        expect(result).toBeTruthy();
+    });
+});
