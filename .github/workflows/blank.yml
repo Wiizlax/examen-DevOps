@@ -19,7 +19,7 @@ name: Checkout repository code
 name: Set Up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '14'  
+        node-version: '14'  # Correction: Utiliser la version correcte de Node.js
 
       
 name: Install Dependencies
