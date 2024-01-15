@@ -23,31 +23,31 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          echo "Installing project dependencies 🔧"
+          echo "Installing project dependencies"
           npm install
 
       - name: Display start time
         run: |
-          echo "⏰ Starting pipeline at $(date +"%H:%M:%S %Z")"
+          echo "Starting pipeline at $(date +"%H:%M:%S %Z")"
 
       - name: Check Prettier & Run EsLint
         run: |
-          echo "Running Prettier and EsLint 👑"
+          echo "Running Prettier and EsLint"
           npm run code:fix
 
       - name: Test Code Coverage (Jest)
         run: |
-          echo "Checking code coverage in Jest 🚨"
+          echo "Checking code coverage in Jest"
           npm run test
 
       - name: Build the app
         run: |
-          echo "Building the app with webpack 🔨"
+          echo "Building the app with webpack"
           npm run build
 
       - name: Display end time
         run: |
-          echo "Ending pipeline at $(date +"%H:%M:%S %Z") ⏰"
+          echo "Ending pipeline at $(date +"%H:%M:%S %Z")"
 
       - name: Success without errors
         run: |
